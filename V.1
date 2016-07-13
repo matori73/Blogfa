@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description"  content="<-BlogDescription->" >
+<meta name="keywords" content="Blog, Weblog, Persian, Hosting, Iran, Iranian, Farsi, Weblogs, Blogs, Blogfa" >
+<meta name="author" content="<-BlogAuthor->" >
+
+<title><-BlogAndPostTitle-></title>
+
+
+<style>
+header{width: 960px;height: 100px;padding: 15px;margin: 10px auto;background: #00a;text-align: center;color: #fff}
+nav{padding: 10px 30px;margin : 10px 10px 30px 10px; background: gray}
+aside{background: #ccc;width: 100px;height: auto;margin: 15px;padding: 15px}
+footer{background: #a7c;text-align: center;padding: 30px}
+li a{text-decoration: none;color:#eee}
+ul {list-style-type: none}
+li{padding-left: 20px;display: inline}
+body {width: 990px;background: #eee;height: auto;margin: 0 auto}
+</style>
+
+</head>
+
+<body>
+
+<header>
+	<h1>this is header</h1>
+</header>
+
+	<nav>
+	 
+	 	 <ul>
+	 	 	<li><a href="/"> some text</a></li>
+		 	<li><a href="/">some text2</a></li>
+		 	<li><a href="/">some text3</a></li>
+		 </ul>
+		
+	</nav>
+
+<section>
+
+<aside>
+	<ul>
+	   <BlogArchive>
+			<li><a href="<-ArchiveLink->"><-ArchiveTitle-></a></li>
+	   </BlogArchive>
+	</ul>
+</aside>
+
+<BlogLinksBlock>
+   <aside>
+	<ol>
+	   <BlogLinks>
+		<li><a href="<-LinkUrl->"><-LinkTitle-></a></li>
+	   </BlogLinks>
+	<ol>
+   </aside>
+</BlogLinksBlock>
+
+	<!-- post -->
+<BLOGFA>
+<article>
+
+	<div class="post">
+	    <a name="<-PostId->"></a>
+		<h2 class="hl"><a href="<-PostLink->"><-PostTitle-></a></h2>
+		<div class="cnt"><-PostContent-><BlogPostTagsBlock><br>برچسب‌ها: <BlogPostTags separator=", "><a href="<-TagLink->"><-TagName-></a></BlogPostTags></BlogPostTagsBlock><BlogExtendedPost><br><a href="<-PostLink->">ادامه مطلب</a></BlogExtendedPost></div>
+		<div class ="info"><a href="<-PostLink->">+</a>&nbsp;نوشته شده در &nbsp;<-PostDate->ساعت&nbsp;<-PostTime->&nbsp توسط&nbsp;<-PostAuthor->&nbsp;
+		<BlogComment>
+		  |&nbsp; <span dir="rtl" > <script type="text/javascript">GetBC(<-PostId->);</script>  </span>
+        </BlogComment>
+        </div>
+	</div>
+	<hr size =1 color =#E8E8E8 style="margin-bottom:5px;margin-top:5px">
+
+</article>
+</BLOGFA>
+	<!-- end post -->
+
+</section>
+	<footer>this is footer</footer>
+		
+	
+
+
+</body>
+</html>
