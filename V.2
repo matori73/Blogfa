@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><-BlogAndPostTitle-></title>
+	<meta charset="utf-8">
+	<meta description="<-BlogDescription->">
+	<meta name="author" content="<-BlogAuthor->">
+
+	<style type="text/css">
+		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: IRANSans;
+	}
+@font-face {
+    font-family: 'IRANSans';
+    src: url('http://up.ghalebgraph.ir/up/galebgraph/file/1395/02/IRANSans-web.woff') format('woff');
+    font-weight: normal;
+}
+	body {
+    line-height: 1;
+    background: #ccc url('http://s6.picofile.com/file/8259388626/pattern.png') repeat-x scroll 0 85px;
+    width: 80%;
+    direction: rtl;
+    margin: 0 auto;
+	}
+
+	nav {
+		padding:10px 0;
+		background: rgba(204, 204, 204, 0.58) none repeat scroll 0% 0%;
+	}
+
+	nav ul {list-style-type: none; text-align: center;}
+	nav li{padding: 20px;display: inline}
+	nav li a {color: #000;font-size: 13px;}
+	nav li a:hover {color:#2100FF;font-size: 15px;font-style: oblique;font-weight: bold;}
+	header {
+		padding: 15px;
+		background: rgb(155, 166, 242) none repeat scroll 0% 0%;
+		text-align: center;
+		font: 15px/2em tahoma;
+		font-weight: 100 !important;
+		    animation: bg-color 12s infinite;
+		    -webkit-animation: bg-color 12s
+	}
+	header h1 {
+		animation: title-color 12s infinite;
+		-webkit-animation: title-color 12s
+	}
+	@keyframes bg-color {
+    0%   { background-color: #e74c3c; }
+    20%  { background-color: #f1c40f; }
+    40%  { background-color: #1abc9c; }
+    60%  { background-color: #3498db; }
+    80%  { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; };
+	}
+	@keyframes title-color {
+    0%   { color: #000; }
+    20%  { color: #9b59b6; }
+    40%  { color: #3498db; }
+    60%  { color: #1abc9c; }
+    80%  { color: #f1c40f; }
+    100% { color: #fff; };
+	}
+	main {
+    background: #bbb;
+    display: table !important;
+    width: 100%;
+	}
+	aside {
+		width: 18%;
+		float: right;
+		display: table;
+		background: #ddd;
+		padding: 10px;
+		margin: 20px;
+		text-align: right;
+		margin-left: 5px;
+	}
+	article {
+		width: 72.7%;
+		display: table;
+		float: left;
+		background: #ffe36c;
+		height: auto;
+		padding: 10px;
+		margin: 20px;
+		margin-right: 0px;
+	}
+	footer {
+		height: 35px;
+		background: rgb(255, 144, 0);
+		text-align: center;
+		margin-top: 10px;
+		line-height: 2em;
+	}
+	.post-h {
+		background: rgba(110, 105, 9, 0.39);
+		padding: 10px;
+		display: table;
+		width: 100%;
+		margin-right: 10px;
+	}
+	.post-h h3 {float: right;font-weight: 100;}
+	.post-h span {
+		float: left;
+		text-align: left;
+		display: table;
+		font-size: 11px;
+		color: #9C3271;
+		margin-left: 20px;
+	}
+	.post-b {
+    	margin-top: 10px;
+    	background: #fff1f1;
+    	padding: 10px;
+    	color: #000 !important;
+    	line-height: 1.5em;
+		font-size: 14px;
+	}
+	.post-f {
+    	background: rgb(237, 138, 138) none repeat scroll 0% 0%;
+    	padding: 5px;
+    	height: 20px;
+    	margin-top: 1px;
+    	display: table;
+    	width: 98%;
+    	border-left: 6px solid #ED8A8A;
+	}
+	.post-f .comm {
+		text-align: left;
+		font-size: 14px;
+		margin-top: 3px;
+		width: 30%;
+		float: left;
+		display: table;
+	}
+	.post-f .author {
+		display: table;
+	}
+	.post-f .author img {
+		width: 60px;
+		height: 60px;
+		margin: -35px -15px 0 10px;
+		position: absolute;
+		border-top: 10px solid #FFE36C;
+		border-left: 10px solid #FFE36C;
+		border-radius: 0 50%;
+	}
+	.post-f .author a {
+		position: absolute;
+		color: #FFF;
+		font-size: 13px;
+		margin: 2px 5%;
+	}
+	aside .archive {
+		padding: 5px;
+	}
+	aside .archive li {
+		margin: 5px 15px 5px 0;
+		-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;
+
+	}
+	aside .archive li:hover {
+		background: #3D9CED;
+		-webkit-transition: all 0.3s;-moz-transition: all 0.3s;transition: all 0.3s;
+	}
+	aside .archive ul {
+		margin: 10px 0 15px 0;
+		list-style: none;
+	}
+	aside .archive ul li {
+		padding: 6px;
+		margin-right: 0;
+	}
+	aside .title {
+		text-align: center;
+		margin: 0 auto;
+		font-size: 15px;
+		text-shadow: 2px 2px 4px #0F00FF , -2px -2px 4px #0F00FF;
+	}
+	aside .title hr {
+		color: #7e78ec;
+		margin-bottom: -10px;
+		opacity: 0.1;
+	}
+details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none !important;
+}
+
+	</style>
+
+	<script  language="javascript">
+  function GetBC(lngPostid)
+   {
+       intTimeZone=<-BlogTimeZone->;
+       strBlogId="<-BlogId->";
+       intCount=-1;
+       strResult="";
+       try {
+	  for (i=0;i<BlogComments.length;i+=2)
+	  {
+	       if (BlogComments[i]==lngPostid)
+	       intCount=BlogComments[i+1] ;
+	  }
+           }  catch( e) {
+           }
+    if ( intCount==-1)  strResult="دیدگاه‌ها";
+    if ( intCount==0)  strResult="ارسال دیدگاه";
+    if ( intCount==1)  strResult="یک دیدگاه";
+    if ( intCount==2)  strResult="دو دیدگاه";
+    if ( intCount==3)  strResult="سه دیدگاه";
+    if ( intCount==4)  strResult="چهار دیدگاه";
+    if ( intCount==5)  strResult="پنج دیدگاه";
+    if ( intCount==6)  strResult="شش دیدگاه";
+    if ( intCount==7)  strResult="هفت دیدگاه";
+    if ( intCount==8)  strResult="هشت دیدگاه";
+    if ( intCount==9)  strResult="نه دیدگاه";
+    if ( intCount>9)  strResult=intCount + " دیدگاه" ;
+  
+  strUrl="/comments/?blogid=" +strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone ;
+  strResult ="<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" +  strResult + " </a>" ;
+
+  document.write ( strResult ) ;
+ }
+ 
+function OpenLD()
+{
+  window.open('/links','blogfa_ld','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+  return true;
+}
+</script>
+</head>
+<body>
+<header>
+	<hgroup> 
+		<h1><-BlogTitle-></h1>
+		<h2><-BlogDescription-></h2>
+	</hgroup>
+</header>
+<nav>
+	<ul>
+		<li><a href="<-BlogUrl->">خانه</a></li>
+		<li><a href="<-BlogArchiveLink->">آرشیو مطالب</a></li>
+		<li><a href="<-BlogEmail->">ارتباط با من</a></li>
+		<li><a href="<-BlogXmlLink->">فید</a></li>
+	</ul>
+</nav>
+
+<main>
+	<aside>
+	<div class="archive">
+	<div class="title">
+		<hr>
+		آرشیو ماهانه
+	</div>
+		<ul>
+			<BlogArchive>
+				<li><a href="<-ArchiveLink->"><-ArchiveTitle-></a></li>
+				<li><a href="<-ArchiveLink->"><-ArchiveTitle-></a></li>
+
+			</BlogArchive>
+		</ul>
+	</div>
+	<div class="archive">
+	<div class="title">
+		<hr>
+		لینکدونی
+	</div>
+		<ol>
+			<BlogLinks>
+				<li><a href="<-LinkUrl->"><-LinkTitle-></a></li>
+			</BlogLinks>
+		<ol>
+	</div>
+	</aside>
+
+	<article>
+	<BLOGFA>
+		<div class="post-h">
+			<h3><-PostTitle-></h3>
+			<span><-PostDate-></span>
+		</div>
+		<div class="post-b">
+			<-PostContent->
+		</div>
+		<div class="post-f">
+
+		<div class="author">
+			<img src="<-BlogPhotoLink->" alt="نویسنده">
+			<a class="name" href="<-PostAuthorLink->" title="<-PostAuthor->"> <-PostAuthor-> </a>
+		</div>
+		<div class="comm">
+			<BlogComment>
+        		<script type="text/javascript">GetBC(<-PostId->);</script>
+    		</BlogComment>
+		</div>
+
+		</div>
+	</BLOGFA>
+	</article>
+</main>
+<footer>
+	<p>
+		Designed with ♥ + HTML5 & CSS3
+	</p>
+</footer>
+</body>
+</html>
